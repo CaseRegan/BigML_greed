@@ -1,6 +1,5 @@
 import random
 import time
-import pep8
 from bigml.api import BigML
 
 # everything between this and the next comment
@@ -135,7 +134,11 @@ BOARD_SIZE = 4
 
 # end implementation
 
+f1 = False
+f2 = False
+
 '''
+f1 = True
 # Comment out the quotes and edit BEST_MODEL to play a random board
 api = BigML()
 b0, c0 = gen_board(BOARD_SIZE)
@@ -155,10 +158,11 @@ predicted_move = POSSIBLE_MOVES[int(round(prediction['object']['output']))]
 print(predicted_move)  # predicted move
 '''
 
-# '''
+'''
+f2 = True
 # Comment out the quotes and edit NUM_ITER to generate data
 F_NAME = 'greed_training.csv'
-NUM_ITER = 5
+NUM_ITER = 5000
 f = open(F_NAME, 'w')
 
 for i in range(NUM_ITER):
@@ -168,4 +172,7 @@ for i in range(NUM_ITER):
     f.write(s + '\n')
 
 f.close()
-# '''
+'''
+
+if not f1 and not f2:
+    print('No function selected, exiting.')

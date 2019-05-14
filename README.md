@@ -1,7 +1,10 @@
 # BigML_greed
 Repo for my application project for BigML
 
-### How to use my project:
+### Setup:
+Declare environment variables such that the api has authentication ( [Tutorial here](https://bigml.com/api/quick_start#qs_authentication) )
+
+### How to use this project:
 Read the comments on lines 139 and 159. Follow their instructions to choose what functions you want the program to perform when you run it.
 
 To use the first function (comparing an optimal move to a bot-determined move), comment out the block quotes and set BEST_MODEL to the api identifier of the model you want to test.
